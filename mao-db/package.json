@@ -1,0 +1,25 @@
+{
+  "name": "mao-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "docker start mao-mysql",
+    "docker-init": "docker run --name mao-mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:5.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oaplata/mao-anywhere.git"
+  },
+  "author": "Omar Plata <oaplata>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oaplata/mao-anywhere/issues"
+  },
+  "homepage": "https://github.com/oaplata/mao-anywhere#readme",
+  "dependencies": {
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}
